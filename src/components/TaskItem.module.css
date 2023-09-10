@@ -1,0 +1,86 @@
+.taskItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  padding: 1rem;
+}
+
+.taskItem+.taskItem {
+  margin-top: 0.75rem;
+}
+
+.taskItem button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+
+  transition: color 0.1s;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.noCheck {
+  height: 1.5rem;
+  width: 1.5rem;
+
+  color: var(--blue-500);
+}
+
+.noCheck:hover {
+  color: var(--blue-700);
+  opacity: 0.8;
+}
+
+.checked {
+  color: var(--blue-700);
+
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 999px;
+
+  transition: background-color 0.1s;
+}
+
+.checked:hover path:nth-child(-n+2) {
+  fill: var(--blue-500);
+
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 999px;
+}
+
+.taskItem p {
+  color: var(--gray-100);
+  line-height: 1.4;
+  flex: 1;
+
+  padding-inline: 0.75rem;
+}
+
+.taskItem .isDone {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.trash {
+  color: var(--gray-300);
+
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.trash:hover {
+  color: var(--danger-500);
+}

@@ -1,0 +1,50 @@
+.main {
+  margin-block: 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.createdInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.createdInfo strong:first-child {
+  color: var(--blue-500);
+  font-size: 0.875rem;
+}
+
+.createdInfo strong:last-child {
+  border-radius: 999px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.doneInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.doneInfo strong:first-child {
+  color: var(--blue-700);
+  font-size: 0.875rem;
+}
+
+.doneInfo strong:last-child {
+  border-radius: 999px;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.list {
+  margin-top: 1.5rem;
+}

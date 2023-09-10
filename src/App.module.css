@@ -1,0 +1,11 @@
+.main {
+  margin: auto;
+  max-width: 47rem;
+}
+
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 28rem;
+  }
+}
